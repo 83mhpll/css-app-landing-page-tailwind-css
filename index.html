@@ -7,7 +7,45 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+  <body class="bg-[#f7f6fd] min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-white/90 border border-[#eceafd] rounded-full mt-4 mx-2 px-10 py-3 flex items-center justify-between shadow-sm" style="height:64px;">
+      <div class="flex items-center">
+        <span class="text-[1.6rem] font-extrabold text-[#232233] tracking-tight flex items-center">
+          Acme
+          <span class="ml-1 text-purple-600 text-[0.8rem] align-super" style="font-size:0.8rem;">•</span>
+        </span>
+      </div>
+      <ul class="flex space-x-10 text-[#232233] font-medium text-[1.05rem]">
+        <li>
+          <a href="#" class="text-[#5b3df2] underline underline-offset-4 decoration-2 font-normal">Home</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-[#5b3df2] font-normal">Features</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-[#5b3df2] font-normal">Pricing</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-[#5b3df2] font-normal">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center justify-center mt-20">
+      <span class="bg-purple-100 text-purple-700 px-4 py-1 rounded-full text-sm font-medium flex items-center mb-6">
+        🌈 Acme Productivity App
+      </span>
+      <h1 class="text-5xl font-extrabold text-gray-900 mb-4 text-center">
+        Boost Your <span class="text-purple-600">Product</span>ivity
+      </h1>
+      <p class="text-lg text-gray-600 mb-8 text-center">
+        Streamline your workflow with our all-in-one productivity app.
+      </p>
+      <button class="bg-gray-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-800 transition">
+        Start Free Trial
+      </button>
+    </section>
   </body>
 </html>
