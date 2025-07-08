@@ -78,43 +78,51 @@
       </div>
     </div>
   </body>
- main
 </html>
 
 <!DOCTYPE html>
 <html lang="en">
- tailwind_mk
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Get in Touch</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <div class="form-box">
-      <h1>Get in Touch</h1>
-      <form>
-        <label for="name">Name</label>
-        <input id="name" type="text" placeholder="John Doe" />
+<body class="bg-[#F6F6FB] min-h-screen flex flex-col justify-center items-center">
 
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="john@example.com" />
+  <div class="flex flex-1 flex-col justify-center items-center w-full">
+    <div class="bg-white rounded-3xl shadow-lg p-10 w-full max-w-xl">
+      <h1 class="text-[#1A1A2C] text-5xl font-bold mb-8 text-center">Get in Touch</h1>
+      <form class="flex flex-col gap-4">
+        <label for="name" class="text-base font-medium">Name</label>
+        <input id="name" type="text" placeholder="John Doe"
+          class="border border-[#E0E0ED] p-3 rounded transition focus:border-[#5E44FF] hover:border-[#B5A9FF] outline-none" />
 
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Your message..."></textarea>
+        <label for="email" class="text-base font-medium">Email</label>
+        <input id="email" type="email" placeholder="john@example.com"
+          class="border border-[#E0E0ED] p-3 rounded transition focus:border-[#5E44FF] hover:border-[#B5A9FF] outline-none" />
 
-        <button type="submit">Submit</button>
+        <label for="message" class="text-base font-medium">Message</label>
+        <textarea id="message" placeholder="Your message..."
+          class="border border-[#E0E0ED] p-3 rounded transition focus:border-[#5E44FF] hover:border-[#B5A9FF] outline-none resize-none min-h-[100px]" ></textarea>
+
+        <button type="submit"
+          class="w-full px-9 py-4 rounded-2xl bg-[#1A1A2C] text-white font-semibold mt-4 hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-2 focus:ring-[#5F5F76] transition self-center">
+          Submit
+        </button>
       </form>
     </div>
   </div>
-  <footer>
-    <div class="footer-left">Acme productivity app ©2024</div>
-    <div class="footer-right">
-      <a href="#">FAQ</a>
-      <a href="#">Terms</a>
-      <a href="#">AI Policy</a>
-      <a href="#">Pricing</a>
+
+  <footer class="flex flex-col md:flex-row justify-between items-center px-8 py-6 bg-transparent text-gray-500 text-sm gap-2 mt-10 w-full max-w-xl">
+    <div>Acme productivity app ©2024</div>
+    <div class="flex gap-4">
+      <a href="#" class="hover:text-[#5E44FF] hover:underline transition">FAQ</a>
+      <a href="#" class="hover:text-[#5E44FF] hover:underline transition">Terms</a>
+      <a href="#" class="hover:text-[#5E44FF] hover:underline transition">AI Policy</a>
+      <a href="#" class="hover:text-[#5E44FF] hover:underline transition">Pricing</a>
     </div>
   </footer>
+
 </body>
+</html>
