@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="bg-[#f7f6fd] min-h-screen">
+  <body class="bg-[#F6F6FB] min-h-screen">
     <!-- Navbar -->
     <nav class="bg-white/90 border border-[#eceafd] rounded-full mt-4 mx-2 px-10 py-3 flex items-center justify-between shadow-sm max-w-5xl mx-auto" style="height:64px;">
       <div class="flex items-center">
@@ -17,21 +17,21 @@
       </div>
       <ul class="flex space-x-10 text-[#232233] font-medium text-[1.05rem]">
         <li>
-          <a href="#" class="text-[#5b3df2] underline underline-offset-4 decoration-2 font-normal">Home</a>
+          <a href="#" class="text-[#5b3df2] underline underline-offset-4 decoration-2 font-normal hover:text-[#5E44FF] hover:underline">Home</a>
         </li>
         <li>
-          <a href="#" class="hover:text-[#5b3df2] font-normal">Features</a>
+          <a href="#" class="hover:text-[#5E44FF] hover:underline font-normal">Features</a>
         </li>
         <li>
-          <a href="#" class="hover:text-[#5b3df2] font-normal">Pricing</a>
+          <a href="#" class="hover:text-[#5E44FF] hover:underline font-normal">Pricing</a>
         </li>
         <li>
-          <a href="#" class="hover:text-[#5b3df2] font-normal">Contact</a>
+          <a href="#" class="hover:text-[#5E44FF] hover:underline font-normal">Contact</a>
         </li>
       </ul>
     </nav>
 
-    <!-- Hero Section -->
+
     <section class="flex flex-col items-center justify-center mt-16 mb-12">
       <span class="bg-purple-100 text-purple-700 px-4 py-1 rounded-full text-sm font-medium flex items-center mb-6">
         🌈 Acme Productivity App
@@ -42,12 +42,11 @@
       <p class="text-lg text-gray-600 mb-8 text-center">
         Streamline your workflow with our all-in-one productivity app.
       </p>
-      <button class="bg-gray-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-800 transition">
+      <button class="w-[187px] px-9 py-4 rounded-2xl bg-[#1A1A2C] text-white font-semibold transition-colors duration-200 hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-2 focus:ring-[#5F5F76]">
         Start Free Trial
       </button>
     </section>
 
-    <!-- Feature Section -->
     <section class="flex justify-center mb-16">
       <div class="flex gap-0">
         <!-- Card 1 -->
@@ -85,36 +84,34 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="flex flex-col items-center justify-center mb-10">
-      <div class="bg-white rounded-2xl shadow-md p-10 w-full max-w-2xl">
-        <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
+      <div class="bg-white rounded-3xl shadow-md p-10 w-full max-w-2xl">
+        <h2 class="text-5xl font-bold text-center mb-8" style="color:#1A1A2C">Get in Touch</h2>
         <form class="space-y-6">
           <div>
             <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
-            <input id="name" type="text" placeholder="John Doe" class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-200" />
+            <input id="name" type="text" placeholder="John Doe" class="w-full px-3 py-3 border border-[#E0E0ED] rounded-lg focus:outline-none transition-colors duration-200 focus:border-[#5E44FF] hover:border-[#B5A9FF]" />
           </div>
           <div>
             <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
-            <input id="email" type="email" placeholder="john@example.com" class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-200" />
+            <input id="email" type="email" placeholder="john@example.com" class="w-full px-3 py-3 border border-[#E0E0ED] rounded-lg focus:outline-none transition-colors duration-200 focus:border-[#5E44FF] hover:border-[#B5A9FF]" />
           </div>
           <div>
             <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
-            <textarea id="message" placeholder="Your message..." class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-200"></textarea>
+            <textarea id="message" placeholder="Your message..." class="w-full px-3 py-3 border border-[#E0E0ED] rounded-lg focus:outline-none transition-colors duration-200 focus:border-[#5E44FF] hover:border-[#B5A9FF]"></textarea>
           </div>
-          <button type="submit" class="w-full bg-gray-900 text-white py-2 rounded-lg font-semibold hover:bg-gray-800 transition">Submit</button>
+          <button type="submit" class="w-[589px] px-9 py-4 rounded-2xl bg-[#1A1A2C] text-white font-semibold transition-colors duration-200 hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-2 focus:ring-[#5F5F76]">Submit</button>
         </form>
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto px-4 py-6 text-gray-500 text-sm">
       <div class="mb-2 md:mb-0">Acme productivity app ©2024</div>
       <div class="flex space-x-6">
-        <a href="#" class="hover:underline">FAQ</a>
-        <a href="#" class="hover:underline">Terms</a>
-        <a href="#" class="hover:underline">AI Policy</a>
-        <a href="#" class="hover:underline">Pricing</a>
+        <a href="#" class="hover:text-[#5E44FF] hover:underline">FAQ</a>
+        <a href="#" class="hover:text-[#5E44FF] hover:underline">Terms</a>
+        <a href="#" class="hover:text-[#5E44FF] hover:underline">AI Policy</a>
+        <a href="#" class="hover:text-[#5E44FF] hover:underline">Pricing</a>
       </div>
     </footer>
   </body>
