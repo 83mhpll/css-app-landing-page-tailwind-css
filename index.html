@@ -9,48 +9,52 @@
   </head>
 
   <body class="bg-[#F6F6FB] min-h-screen">
-    <!-- Navbar -->
-    <nav
-      class="bg-white/90 border border-[#eceafd] rounded-full mt-4 mx-2 px-10 py-3 flex items-center justify-between shadow-sm max-w-5xl mx-auto"
-      style="height: 64px"
-    >
+    <!-- Navbar with responsive hamburger menu -->
+    <nav class="bg-white/90 border border-[#eceafd] rounded-full mt-4 mx-4 px-6 py-3 flex items-center justify-between shadow-sm max-w-5xl md:mx-auto">
       <div class="flex items-center">
-        <span
-          class="text-[1.6rem] font-extrabold text-[#232233] tracking-tight flex items-center"
-        >
+        <span class="text-[1.6rem] font-extrabold text-[#232233] tracking-tight flex items-center">
           Acme
-          <span
-            class="ml-1 text-purple-600 text-[0.8rem] align-super"
-            style="font-size: 0.8rem"
-            >•</span
-          >
+          <span class="ml-1 text-purple-600 text-[0.8rem] align-super">•</span>
         </span>
       </div>
-      <ul class="flex space-x-10 text-[#232233] font-medium text-[1.05rem]">
-        <li>
-          <a
-            href="#"
-            class="text-[#5b3df2] underline underline-offset-4 decoration-2 font-normal hover:text-[#5E44FF] hover:underline"
-            >Home</a
-          >
-        </li>
-        <li>
-          <a href="#" class="hover:text-[#5E44FF] hover:underline font-normal"
-            >Features</a
-          >
-        </li>
-        <li>
-          <a href="#" class="hover:text-[#5E44FF] hover:underline font-normal"
-            >Pricing</a
-          >
-        </li>
-        <li>
-          <a href="#" class="hover:text-[#5E44FF] hover:underline font-normal"
-            >Contact</a
-          >
-        </li>
+      
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-10 text-[#232233] font-medium text-[1.05rem]">
+        <li><a href="#" class="text-[#5b3df2] underline underline-offset-4 decoration-2 font-normal hover:text-[#5E44FF]">Home</a></li>
+        <li><a href="#" class="hover:text-[#5E44FF] hover:underline font-normal">Features</a></li>
+        <li><a href="#" class="hover:text-[#5E44FF] hover:underline font-normal">Pricing</a></li>
+        <li><a href="#" class="hover:text-[#5E44FF] hover:underline font-normal">Contact</a></li>
       </ul>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+        <svg class="w-6 h-6 text-[#232233]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 md:hidden">
+      <div class="fixed top-0 right-0 h-full w-64 bg-white shadow-xl transform transition-transform duration-300 ease-in-out">
+        <div class="flex justify-between items-center p-6 border-b">
+          <span class="text-xl font-bold text-[#232233]">Menu</span>
+          <button id="closeMobileMenu" class="p-2 rounded-lg hover:bg-gray-100">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <nav class="p-6">
+          <ul class="space-y-4">
+            <li><a href="#" class="block py-2 text-[#5b3df2] font-medium">Home</a></li>
+            <li><a href="#" class="block py-2 text-[#232233] hover:text-[#5E44FF]">Features</a></li>
+            <li><a href="#" class="block py-2 text-[#232233] hover:text-[#5E44FF]">Pricing</a></li>
+            <li><a href="#" class="block py-2 text-[#232233] hover:text-[#5E44FF]">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
     <section class="flex flex-col items-center justify-center mt-16 mb-12">
       <span
@@ -191,6 +195,28 @@
         >
       </div>
     </footer>
+    <!-- <script>
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+      // เปิด mobile menu
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+      });
+
+      // ปิด mobile menu
+      closeMobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+
+      // ปิด mobile menu เมื่อคลิกนอก menu
+      mobileMenu.addEventListener('click', (e) => {
+        if (e.target === mobileMenu) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    </script> -->
   </body>
 </html>
  
