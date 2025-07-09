@@ -90,39 +90,37 @@
 </head>
 <body class="bg-[#F6F6FB] min-h-screen flex flex-col justify-center items-center">
 
-  <div class="flex flex-1 flex-col justify-center items-center w-full">
-    <div class="bg-white rounded-3xl shadow-lg p-10 w-full max-w-xl">
-      <h1 class="text-[#1A1A2C] text-5xl font-bold mb-8 text-center">Get in Touch</h1>
-      <form class="flex flex-col gap-4">
-        <label for="name" class="text-base font-medium">Name</label>
-        <input id="name" type="text" placeholder="John Doe"
-          class="border border-[#E0E0ED] p-3 rounded transition focus:border-[#5E44FF] hover:border-[#B5A9FF] outline-none" />
-
-        <label for="email" class="text-base font-medium">Email</label>
-        <input id="email" type="email" placeholder="john@example.com"
-          class="border border-[#E0E0ED] p-3 rounded transition focus:border-[#5E44FF] hover:border-[#B5A9FF] outline-none" />
-
-        <label for="message" class="text-base font-medium">Message</label>
-        <textarea id="message" placeholder="Your message..."
-          class="border border-[#E0E0ED] p-3 rounded transition focus:border-[#5E44FF] hover:border-[#B5A9FF] outline-none resize-none min-h-[100px]" ></textarea>
-
-        <button type="submit"
-          class="w-full px-9 py-4 rounded-2xl bg-[#1A1A2C] text-white font-semibold mt-4 hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-2 focus:ring-[#5F5F76] transition self-center">
-          Submit
-        </button>
-      </form>
+  <div class="min-h-screen flex flex-col justify-between bg-gray-50">
+    <div class="flex-1 flex justify-center items-center w-full px-4 py-8">
+      <div class="w-full max-w-lg bg-white rounded-xl shadow-md p-6 md:p-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Get in Touch</h2>
+        <form class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Name</label>
+            <input type="text" placeholder="John Doe" class="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Email</label>
+            <input type="email" placeholder="john@example.com" class="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Message</label>
+            <textarea placeholder="Your message..." class="w-full border rounded-md px-3 py-2 h-24 focus:outline-none focus:ring-2 focus:ring-indigo-200"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-gray-900 text-white py-2 rounded-md mt-2 hover:bg-gray-800 transition">Submit</button>
+        </form>
+      </div>
     </div>
+    <footer class="flex flex-col md:flex-row justify-between items-center px-4 py-4 text-sm text-gray-500">
+      <div>Acme productivity app ©2024</div>
+      <div class="flex space-x-4 mt-2 md:mt-0">
+        <a href="#">FAQ</a>
+        <a href="#">Terms</a>
+        <a href="#">AI Policy</a>
+        <a href="#">Pricing</a>
+      </div>
+    </footer>
   </div>
-
-  <footer class="flex flex-col md:flex-row justify-between items-center px-8 py-6 bg-transparent text-gray-500 text-sm gap-2 mt-10 w-full max-w-xl">
-    <div>Acme productivity app ©2024</div>
-    <div class="flex gap-4">
-      <a href="#" class="hover:text-[#5E44FF] hover:underline transition">FAQ</a>
-      <a href="#" class="hover:text-[#5E44FF] hover:underline transition">Terms</a>
-      <a href="#" class="hover:text-[#5E44FF] hover:underline transition">AI Policy</a>
-      <a href="#" class="hover:text-[#5E44FF] hover:underline transition">Pricing</a>
-    </div>
-  </footer>
 
 </body>
 </html>
